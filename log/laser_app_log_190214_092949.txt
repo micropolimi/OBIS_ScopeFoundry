@@ -1,0 +1,1 @@
+2019-02-14T09:30:08|WARNING|LoggedQuantity|present_output_power read_from_hardware called when not connected to hardware

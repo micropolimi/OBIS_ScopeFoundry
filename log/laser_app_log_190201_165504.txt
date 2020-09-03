@@ -1,0 +1,5 @@
+2019-02-01T16:55:06|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\aless\eclipse-workspace\Coherent_laser\laser_hardware.py", line 79, in update_ports
+    self.port.val=connected[0]
+IndexError: list index out of range
+

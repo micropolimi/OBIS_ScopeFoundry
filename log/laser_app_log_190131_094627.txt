@@ -1,0 +1,19 @@
+2019-01-31T09:46:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\aless\eclipse-workspace\Coherent_laser\laser_app.py", line 34, in <module>
+    app = Laser_App(sys.argv)
+  File "C:\Users\aless\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 332, in __init__
+    self.setup()
+  File "C:\Users\aless\eclipse-workspace\Coherent_laser\laser_app.py", line 18, in setup
+    self.add_hardware(LaserHW(self))
+  File "C:\Users\aless\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 80, in __init__
+    self.setup()
+  File "C:\Users\aless\eclipse-workspace\Coherent_laser\laser_hardware.py", line 19, in setup
+    self.power_rating = self.add_logged_quantity('power_rating', dtype=float, initial='', ro=1, unit = 'W')
+  File "C:\Users\aless\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 28, in add_logged_quantity
+    return self.settings.New(name, **kwargs)
+  File "C:\Users\aless\Anaconda3\lib\site-packages\ScopeFoundry\logged_quantity.py", line 1106, in New
+    lq = LoggedQuantity(name=name, dtype=dtype, **kwargs)
+  File "C:\Users\aless\Anaconda3\lib\site-packages\ScopeFoundry\logged_quantity.py", line 79, in __init__
+    self.val = dtype(initial)
+ValueError: could not convert string to float: 
+

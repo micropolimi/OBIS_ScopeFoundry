@@ -1,0 +1,19 @@
+2019-01-24T17:17:00|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\Admin\eclipse-workspace\laser\laser_app.py", line 34, in <module>
+    app = Laser_App(sys.argv)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 332, in __init__
+    self.setup()
+  File "C:\Users\Admin\eclipse-workspace\laser\laser_app.py", line 18, in setup
+    self.add_hardware(LaserHW(self))
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 80, in __init__
+    self.setup()
+  File "C:\Users\Admin\eclipse-workspace\laser\laser_hardware.py", line 17, in setup
+    self.laser_status = self.add_logged_quantity('operating_mode', dtype=str, choices=['OFF', 'ON'] , reread_from_hardware_after_write = True )
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 28, in add_logged_quantity
+    return self.settings.New(name, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\logged_quantity.py", line 1108, in New
+    return self.Add(lq)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\logged_quantity.py", line 1115, in Add
+    assert not (name in self._logged_quantities)
+AssertionError
+

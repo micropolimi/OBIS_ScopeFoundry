@@ -1,0 +1,9 @@
+2019-01-30T16:15:34|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\aless\Anaconda3\lib\site-packages\ScopeFoundry\logged_quantity.py", line 241, in update_value
+    self.hardware_set_func(self.val)
+  File "C:\Users\aless\eclipse-workspace\Coherent_laser\laser_device.py", line 154, in set_laser_power
+    fullresp = self.write_cmd('SOURce:POWer:LEVel:IMMediate:AMPLitude '+str(value))
+  File "C:\Users\aless\eclipse-workspace\Coherent_laser\laser_device.py", line 25, in write_cmd
+    self.ser.write(serialcmd.encode())
+AttributeError: 'LaserDevice' object has no attribute 'ser'
+

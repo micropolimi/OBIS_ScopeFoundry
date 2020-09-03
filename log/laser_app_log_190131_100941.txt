@@ -1,0 +1,11 @@
+2019-01-31T10:09:46|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\aless\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 219, in enable_connection
+    raise err
+  File "C:\Users\aless\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 212, in enable_connection
+    self.disconnect()
+  File "C:\Users\aless\eclipse-workspace\Coherent_laser\laser_hardware.py", line 50, in disconnect
+    self.laser.close()
+  File "C:\Users\aless\eclipse-workspace\Coherent_laser\laser_device.py", line 21, in close
+    self.ser.close()
+AttributeError: 'LaserDevice' object has no attribute 'ser'
+

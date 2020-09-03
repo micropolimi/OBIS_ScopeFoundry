@@ -1,0 +1,14 @@
+2019-02-07T16:22:16|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\LabPrograms\Python\laser\laser_app.py", line 34, in <module>
+    app = Laser_App(sys.argv)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 332, in __init__
+    self.setup()
+  File "C:\LabPrograms\Python\laser\laser_app.py", line 17, in setup
+    from laser_hardware import LaserHW
+  File "C:\LabPrograms\Python\laser\laser_hardware.py", line 6, in <module>
+    from laser_device import LaserDevice
+  File "C:\LabPrograms\Python\laser\laser_device.py", line 35
+    return echo)
+               ^
+SyntaxError: invalid syntax
+

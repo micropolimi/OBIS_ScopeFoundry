@@ -1,0 +1,15 @@
+2019-01-30T16:06:52|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\aless\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 208, in enable_connection
+    raise err
+  File "C:\Users\aless\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 204, in enable_connection
+    self.connect()
+  File "C:\Users\aless\eclipse-workspace\Coherent_laser\laser_hardware.py", line 24, in connect
+    self.laser = LaserDevice(port=self.port.val, debug=self.debug_mode.val)
+  File "C:\Users\aless\eclipse-workspace\Coherent_laser\laser_device.py", line 18, in __init__
+    ser.flush()
+  File "C:\Users\aless\Anaconda3\lib\site-packages\serial\serialwin32.py", line 343, in flush
+    while self.out_waiting:
+  File "C:\Users\aless\Anaconda3\lib\site-packages\serial\serialwin32.py", line 445, in out_waiting
+    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: ClearCommError failed (OSError(9, 'The handle is invalid.', None, 6))
+

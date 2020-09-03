@@ -1,0 +1,12 @@
+2019-02-01T15:03:35|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\aless\eclipse-workspace\Coherent_laser\laser_app.py", line 34, in <module>
+    app = Laser_App(sys.argv)
+  File "C:\Users\aless\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 332, in __init__
+    self.setup()
+  File "C:\Users\aless\eclipse-workspace\Coherent_laser\laser_app.py", line 17, in setup
+    from laser_hardware import LaserHW
+  File "C:\Users\aless\eclipse-workspace\Coherent_laser\laser_hardware.py", line 30
+    if hasattr(self, 'timer')
+                            ^
+SyntaxError: invalid syntax
+
